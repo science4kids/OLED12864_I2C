@@ -180,11 +180,11 @@ namespace OLED12864_I2C {
 
     /**
      * set pixel in OLED
-     * @param x is X alis, eg: 0
-     * @param y is Y alis, eg: 0
-     * @param color is dot color, eg: 1
+     * @param x is X alis, bijvb: 0
+     * @param y is Y alis, bijvb: 0
+     * @param color is dot kleur, bijvb: 1
      */
-    //% blockId="OLED12864_I2C_PIXEL" block="set pixel at x %x|y %y|color %color"
+    //% blockId="OLED12864_I2C_PIXEL" block="set pixel op x %x|y %y|kleur %color"
     //% weight=70 blockGap=8
     export function pixel(x: number, y: number, color: number = 1) {
         let page = y >> 3
@@ -207,13 +207,13 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * show text in OLED
-     * @param x is X alis, eg: 0
-     * @param y is Y alis, eg: 0
-     * @param s is the text will be show, eg: 'Hello!'
-     * @param color is string color, eg: 1
+     * roon tekst in het OLED schermpje
+     * @param x is X alis, bijvb: 0
+     * @param y is Y alis, bijvb: 0
+     * @param s is het tekstje om te laten zien, bijvb: 'Hallo!'
+     * @param color is tekst kleur, bijvb: 1
      */
-    //% blockId="OLED12864_I2C_SHOWSTRING" block="toon een tekst op x %x|y %y|text %s|kleur %color"
+    //% blockId="OLED12864_I2C_SHOWSTRING" block="toon een tekst op x %x|y %y|tekst %s|kleur %color"
     //% weight=80 blockGap=8
     export function showString(x: number, y: number, s: string, color: number = 1) {
         let col = 0
@@ -243,20 +243,20 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * show a number in OLED
-     * @param x is X alis, eg: 0
-     * @param y is Y alis, eg: 0
+     * toon een getal in het OLED
+     * @param x is X alis, bijvb: 0
+     * @param y is Y alis, bijvb: 0
      * @param num is het getal om te laten zien, eg: 12
      * @param color is kleurnummer, bijvb: 1
      */
-    //% blockId="OLED12864_I2C_NUMBER" block="toon een getal op x %x|y %y|number %num|kleur %color"
+    //% blockId="OLED12864_I2C_NUMBER" block="toon een getal op x %x|y %y|getal %num|kleur %color"
     //% weight=80 blockGap=8
     export function showNumber(x: number, y: number, num: number, color: number = 1) {
         showString(x, y, num.toString(), color)
     }
 
     /**
-     * draw a horizontal line
+     * teken een horizontale lijn
      * @param x is X alis, bijvb: 0
      * @param y is Y alis, bijvb: 0
      * @param len lengte van de lijn, bijvb: 10
@@ -270,7 +270,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * draw a vertical line
+     * teken een vertikale lijn
      * @param x is X alis, eg: 0
      * @param y is Y alis, eg: 0
      * @param len is de lengte van de lijn, bijvb: 10
@@ -284,7 +284,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * draw a rectangle
+     * teken een rechthoek
      * @param x1 is X alis, eg: 0
      * @param y1 is Y alis, eg: 0
      * @param x2 is X alis, eg: 60
@@ -305,7 +305,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * invert display
+     * invert scherm
      * @param d true: invert / false: normal, eg: true
      */
     //% blockId="OLED12864_I2C_INVERT" block="invert schermbeeld %d"
@@ -316,7 +316,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * draw / redraw screen
+     * teken of bijwerken scherm
      */
     //% blockId="OLED12864_I2C_DRAW" block="teken"
     //% weight=64 blockGap=8
@@ -326,7 +326,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * clear screen
+     * scherm opruimen
      */
     //% blockId="OLED12864_I2C_CLEAR" block="schoonmaken"
     //% weight=63 blockGap=8
@@ -337,7 +337,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * turn on screen
+     * scherm aanzetten
      */
     //% blockId="OLED12864_I2C_ON" block="aanzetten"
     //% weight=62 blockGap=8
@@ -346,7 +346,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * turn off screen
+     * scherm uitzetten
      */
     //% blockId="OLED12864_I2C_OFF" block="uitzetten"
     //% weight=61 blockGap=8
@@ -366,7 +366,7 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * OLED initialize
+     * OLED klaarzetten
      * @param addr is i2c addr, eg: 60
      */
     //% blockId="OLED12864_I2C_init" block="init OLED met addr %addr"
