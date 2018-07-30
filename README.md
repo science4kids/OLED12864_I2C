@@ -8,7 +8,7 @@ https://github.com/fizban99/microbit_ssd1306
 Author: shaoziyang  
 Date:   2018.Mar  
 
-![](https://raw.githubusercontent.com/microbit-makecode-packages/OLED12864_I2C/master/icon.png)  
+![](https://github.com/pappavis/OLED12864_I2C/blob/master/icon.png)  
   
 
 ## usage
