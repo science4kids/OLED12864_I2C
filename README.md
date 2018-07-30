@@ -1,6 +1,6 @@
 # I2C OLED 128x64
 
-makecode I2C OLED 128x64 package for micro:bit.  
+Dutch localised makecode I2C OLED 128x64 package for micro:bit.  
 
 Part of the drive base on fizban99's microbit OLED driver:  
 https://github.com/fizban99/microbit_ssd1306
