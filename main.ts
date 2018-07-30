@@ -207,9 +207,9 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * roon tekst in het OLED schermpje
-     * @param x is X alis, bijvb: 0
-     * @param y is Y alis, bijvb: 0
+     * toon tekst in het OLED schermpje
+     * @param x is X alias, bijvb: 0
+     * @param y is Y alias, bijvb: 0
      * @param s is het tekstje om te laten zien, bijvb: 'Hallo!'
      * @param color is tekst kleur, bijvb: 1
      */
@@ -306,7 +306,7 @@ namespace OLED12864_I2C {
 
     /**
      * invert scherm
-     * @param d true: invert / false: normal, eg: true
+     * @param d true: invert / false: normaal, bijvb: waar
      */
     //% blockId="OLED12864_I2C_INVERT" block="invert schermbeeld %d"
     //% weight=65 blockGap=8
